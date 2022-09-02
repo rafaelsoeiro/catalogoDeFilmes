@@ -22,13 +22,14 @@ export const Movie = styled.li`
     flex-direction: column;
     align-items: center;
     img {
-        width: 180px;
+        width: 150px;
         border-radius: 1rem;
         margin-bottom: 1rem;
     }
     span {
         font-weight: 600;
         font-size: 120%;
+        text-align: center;
     }
     a {
         transition: all ease 200ms;

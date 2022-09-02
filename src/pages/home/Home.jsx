@@ -1,35 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, MovieList, Movie } from "./styles";
-import {API_KEY} from "../../config/key"
+import { APIKEY, image_path } from "../../config/key";
+import { Link } from "react-router-dom";
 
 function Home() {
-    const movies = [
-        {
-            id:1,
-            title: "Doutor estranho",
-            image_url: "https://images-na.ssl-images-amazon.com/images/I/81eZzxbS3mL.jpg",
-        },
-        {
-            id:2,
-            title: "Doutor estranho",
-            image_url: "https://images-na.ssl-images-amazon.com/images/I/81eZzxbS3mL.jpg",
-        },
-        {
-            id:3,
-            title: "Doutor estranho",
-            image_url: "https://images-na.ssl-images-amazon.com/images/I/81eZzxbS3mL.jpg",
-        },
-        {
-            id:4,
-            title: "Doutor estranho",
-            image_url: "https://images-na.ssl-images-amazon.com/images/I/81eZzxbS3mL.jpg",
-        },
-        {
-            id:5,
-            title: "Doutor estranho",
-            image_url: "https://images-na.ssl-images-amazon.com/images/I/81eZzxbS3mL.jpg",
-        },
-    ];
+    const [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+        //Consumir api
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${APIKEY}&language=en-US&page=1`)
+            .then((response) => response.json())
+            .then((data) => setMovies(data.results))
+    }, []);
+
     return (
         <Container>
             <h1> Filmes </h1>
@@ -38,12 +21,12 @@ function Home() {
                 {movies.map((movies) => {
                     return (
                         <Movie key={movies.id}>
-                            <a href={movies.image_url}>
+                            <Link to={`/details/${movies.id}`}>
                                 <img
-                                    src={movies.image_url}
+                                    src={`${image_path}${movies.poster_path}`}
                                     alt={movies.title}
                                 />
-                            </a>
+                            </Link>
                             <span>{movies.title}</span>
                         </Movie>
                     );
