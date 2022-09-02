@@ -5,11 +5,15 @@ export const Titulo = styled.h1`
     margin: 3rem;
 `;
 export const Container = styled.div`
+    padding: 10%;
     .movie {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
     }
     img {
         width: 300px;
@@ -17,12 +21,18 @@ export const Container = styled.div`
     }
     h1 {
         margin: 2rem 0;
+        @media screen and (max-width: 600px) {
+            margin: 1rem 0;
+        }
     }
     .detalhes {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         max-width: 50%;
+        @media screen and (max-width: 600px) {
+            max-width: 90%;
+        }
     }
     button {
         background: #6654da;

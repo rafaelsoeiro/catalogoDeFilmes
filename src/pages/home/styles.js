@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    padding-bottom: 2rem;
     h1 {
         text-align: center;
         margin: 3rem 0;
@@ -14,7 +15,8 @@ export const MovieList = styled.ul`
     column-gap: 2rem;
     row-gap: 3rem;
 
-    li {
+    @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 `;
 export const Movie = styled.li`
@@ -37,4 +39,10 @@ export const Movie = styled.li`
     a:hover {
         transform: scale(1.1);
     }
+    @media screen and (max-width: 600px) {
+    img{
+        width: 250px;
+    }
+    }
+
 `;

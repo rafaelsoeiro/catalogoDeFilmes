@@ -27,7 +27,6 @@ const Details = () => {
     console.log(movie);
     return (
         <>
-            <Titulo>{`${movie.title}`}</Titulo>
             <Container>
                 <div className="movie">
                     <img src={movie.image} alt={`${movie.sinopse}`} />
@@ -37,7 +36,9 @@ const Details = () => {
                         <span className="releaseDate">
                             Data de Lançamento: {movie.releaseDate}
                         </span>
-                       <Link to="/"> <button>Voltar</button></Link>
+                        <Link to="/">
+                            <button>Voltar</button>
+                        </Link>
                     </div>
                 </div>
             </Container>
