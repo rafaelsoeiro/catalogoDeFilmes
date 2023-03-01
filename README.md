@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+<h1 align="center">Catalogo de Filmes</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">Está aplicação é um catalogo de filmes, ou seja, trás uma listagem de uma seríe de filmes recentemente lançados. Esse projeto foi construido com React.js, Styled Components e outras tecnologias.</p>
 
-## Available Scripts
+<p align="center">Veja ao vivo no link 👉<a href="https://apifilmes-portfolio.netlify.app/"> Catalogo de filmes </a>
+</p>
 
-In the project directory, you can run:
+<h1 align="center">
+  <img alt="WeatherApp" title="WeatherApp" src=".\src\assets\api-filmes-portfolio.png" width="80%" />
+</h1>
 
-### `npm start`
+<p align="center">
+ <a href="#Tópicos">Tópicos</a> •
+ <a href="#pré-requisitos">Pré-Requisitos</a> •
+ <a href="#rodando-o-projeto">Rodando o projeto</a> •
+ <a href="#tecnologias-e-ferramentas">Tecnologias e Ferramentas</a> •
+ <a href="#autor">Autor</a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- <h1 align="center">
+  <img alt="Catalogo de Filmes"src=".\github\001mokup-mobile-portfolio.png" height="425" />
+</h1> -->
 
-### `npm test`
+### Tópicos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   [x] Introdução
+-   [x] Pré-Requisitos
+-   [x] Rodando o projeto
+-   [x] Tecnologias e Ferramentas
+-   [x] Autor
 
-### `npm run build`
+### Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Antes de começar, é necessario destacar além de possuir o node.js instalado na sua maquina não existem pré-requisitos para trabalhar neste projeto já que trata-se de um projeto react.js.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dito isso é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Rodando o projeto
 
-### `npm run eject`
+```bash
+# Clone este repositório
+$ git clone https://github.com/rafaelsoeiro/catalogoDeFilmes
+# Acesse a pasta do projeto no terminal/cmd/bash
+$ cd catalogoDeFilmes
+# Instale as dependências
+$ npm
+# Inicializando o projeto
+$ npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Tecnologias e Ferramentas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+As seguintes tecnologias e ferramentas foram usadas na construção do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-   [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+-   [React](https://pt-br.reactjs.org/)
+-   [Styled Components](https://styled-components.com/)
+-   [Prettier](https://prettier.io/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Autor
 
-## Learn More
+<img alt="rafael soeiro" src="https://avatars.githubusercontent.com/u/103294767?v=4" height="100" width="100" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Made with 💜 by Rafael Soeiro 👋
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![LinkedIn Badge](https://img.shields.io/badge/-Rafael_Soeiro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafael-soeiro/)](https://www.linkedin.com/in/rafael-soeiro/)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
